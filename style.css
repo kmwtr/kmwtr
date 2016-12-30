@@ -7,28 +7,29 @@ body{
 	color: #333333;
 	text-align: left;
 	font-family: "Noto Sans Japanese", sans-serif;
+    font-size: 16px;
 	line-height: 1.6em;
-	padding: 2.0em;
 }
 
 /* - - - - - */
 
-h1, h2, h3, p, th, td, ul, li, a{
-	font-weight: 200;
+h1, h2, h3, p, li, th, td, a{
+    font-weight: 200;
 }
-h1, h2, h3, p,table, ul{
-	padding-bottom: 0.5em;
+
+h1, h2, h3, p, ul{
+	margin-bottom: 0.5em;
 }
 
 h1{
-	font-size: 130%;
+	font-size: 150%;
 }
 
 h2{
-	font-size: 110%;
+	font-size: 120%;
 }
 
-p, table, ul{
+p, ul, tr{
 	font-size: 90%;
 }
 
@@ -47,7 +48,7 @@ td{
 }
 
 ul{
-	padding-left: 1.5em;
+	padding-left: 1.4em;
 }
 
 a:link {
@@ -62,31 +63,38 @@ a:hover {
 
 /* - - - - - */
 
+header, section {
+	margin-bottom: 2.0em;
+}
+
 header {
 	display: table;
-	margin-bottom: 2.0em;
 }
 
 header div {
 	display: table-cell;
 	vertical-align: bottom;
-	padding-right: 1.5em;
-}
-
-section {
-	margin-bottom: 2.0em;
+	padding-right: 2.0em;
 }
 
 /* - - - - - */
 
 .small {
-	font-size: 75%;
+	font-size: 70%;
 }
 
 .asciiart{
 	color: #666666;
-	font-size: 50%;
-	line-height: 1.0em;
-	letter-spacing: 0.0em;
+	font-size: 60%;
+	line-height: 1.1em;
+	letter-spacing: 0.1em;
 	font-family:  "Courier New", monospace;
+}
+
+/* - - - - - */
+
+#container{
+    width: 960px;
+	padding: 2.0em;
+    margin: 0 auto;
 }
