@@ -3,12 +3,12 @@
 /* - - - - - */
 
 body{
-	background: #f2f2f2;
-	color: #333333;
-	text-align: left;
-	font-family: "Noto Sans Japanese", sans-serif;
+    background: #f2f2f2;
+    color: #333333;
+    text-align: left;
+    font-family: "Noto Sans Japanese", sans-serif;
     font-size: 16px;
-	line-height: 1.6em;
+    line-height: 1.6em;
 }
 
 /* - - - - - */
@@ -18,83 +18,83 @@ h1, h2, h3, p, li, th, td, a{
 }
 
 h1, h2, h3, p, ul{
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 h1{
-	font-size: 150%;
+    font-size: 150%;
 }
 
 h2{
-	font-size: 120%;
+    font-size: 120%;
 }
 
 p, ul, tr{
-	font-size: 90%;
+    font-size: 90%;
 }
 
 table{
-	border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 th{
-	padding: 0 2.0em 0 0;
-	border-bottom: 1px solid #b3b3b3;
+    padding: 0 2.0em 0 0;
+    border-bottom: 1px solid #b3b3b3;
 }
 
 td{
-	padding: 0.2em 2.0em 0.2em 0;
-	border-bottom: 1px dashed #b3b3b3;
+    padding: 0.2em 2.0em 0.2em 0;
+    border-bottom: 1px dashed #b3b3b3;
 }
 
 ul{
-	padding-left: 1.4em;
+    padding-left: 1.4em;
 }
 
 a:link {
-	color: #406080;
+    color: #406080;
 }
 a:visited {
-	color: #406080;
+    color: #406080;
 }
 a:hover {
-	color: #5995b3;
+    color: #5995b3;
 }
 
 /* - - - - - */
 
 header, section {
-	margin-bottom: 2.0em;
+    margin-bottom: 2.0em;
 }
 
 header {
-	display: table;
+    display: table;
 }
 
 header div {
-	display: table-cell;
-	vertical-align: bottom;
-	padding-right: 2.0em;
+    display: table-cell;
+    vertical-align: bottom;
+    padding-right: 2.0em;
 }
 
 /* - - - - - */
 
 .small {
-	font-size: 70%;
+    font-size: 70%;
 }
 
 .asciiart{
-	color: #666666;
-	font-size: 60%;
-	line-height: 1.1em;
-	letter-spacing: 0.1em;
-	font-family:  "Courier New", monospace;
+    color: #666666;
+    font-size: 60%;
+    line-height: 1.1em;
+    letter-spacing: 0.1em;
+    font-family:  "Courier New", monospace;
 }
 
 /* - - - - - */
 
 #container{
     width: 960px;
-	padding: 2.0em;
+    padding: 2.0em;
     margin: 0 auto;
 }
