@@ -1,85 +1,100 @@
 *{margin:0; padding:0; font-size:100%; font-weight:normal; vertical-align:baseline; background:transparent; border:none;}
 
+/* - - - - - */
+
 body{
-	background: #f2f2f2;
-	color: #333333;
-	text-align: left;
-	font-family: "Noto Sans Japanese", sans-serif;
-	line-height: 1.6em;
-	padding: 2.0em;
+    background: #f2f2f2;
+    color: #333333;
+    text-align: left;
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
 }
 
-h1, h2, h3, p, th, td, ul, li, a{
-	font-weight: 200;
+/* - - - - - */
+
+h1, h2, h3, p, li, th, td, a{
+    font-weight: 200;
 }
-h1, h2, h3, p,table, ul{
-	padding-bottom: 0.5em;
+
+h1, h2, h3, p, ul{
+    margin-bottom: 0.5em;
 }
 
 h1{
-	font-size: 130%;
+    font-size: 150%;
 }
 
 h2{
-	font-size: 110%;
+    font-size: 120%;
 }
 
-p, table{
-	font-size: 90%;
+p, ul, tr{
+    font-size: 90%;
 }
 
 table{
-	border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 th{
-	padding: 0 2.0em 0 0;
-	border-bottom: 1px solid #b3b3b3;
+    padding: 0 2.0em 0 0;
+    border-bottom: 1px solid #b3b3b3;
 }
 
 td{
-	padding: 0.2em 2.0em 0.2em 0;
-	border-bottom: 1px dashed #b3b3b3;
+    padding: 0.2em 2.0em 0.2em 0;
+    border-bottom: 1px dashed #b3b3b3;
 }
 
 ul{
-	font-size: 90%;
-	padding-left: 1.5em;
-}
-
-header {
-	text-align: center;
-}
-
-section, header {
-	margin-bottom: 1.0em;
+    padding-left: 1.4em;
 }
 
 a:link {
-	color: #406080;
+    color: #406080;
 }
 a:visited {
-	color: #406080;
+    color: #406080;
 }
 a:hover {
-	color: #5995b3;
+    color: #5995b3;
 }
+
+/* - - - - - */
+
+header, section {
+    margin-bottom: 2.0em;
+}
+
+header {
+    display: table;
+}
+
+header div {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-right: 2.0em;
+}
+
+/* - - - - - */
 
 .small {
-	font-size: 75%;
-}
-
-.fl {
-	float: left;
-	margin-right: 2.0em;
-}
-
-.clear {
-	clear: both;
+    font-size: 70%;
 }
 
 .asciiart{
-	font-size: 60%;
-	line-height: 1.3em;
-	font-family:  "Courier New", monospace;
+    color: #666666;
+    font-size: 60%;
+    line-height: 1.1em;
+    letter-spacing: 0.1em;
+    font-family:  "Courier New", monospace;
+}
+
+/* - - - - - */
+
+#container{
+    width: 960px;
+    padding: 2.0em;
+    margin: 0 auto;
 }
