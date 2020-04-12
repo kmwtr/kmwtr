@@ -13,21 +13,26 @@ body{
 
 /* - - - - - */
 
-h1, h2, h3, p, li, th, td, a{
-    font-weight: 200;
-}
-
-h1, h2, h3, p, ul{
+h2, h3{
+    font-weight: 600;
     margin-bottom: 0.5em;
 }
+
+p, li, th, td, a{
+    font-weight: 400;
+}
+
 
 h1{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 150%;
+    font-weight: 600;
 }
 
 h2{
-    font-size: 125%;
+    font-size: 130%;
+    padding-bottom: 0.2em;
+    border-bottom: 1px gray solid;
 }
 
 p, ul, tr{
@@ -36,14 +41,17 @@ p, ul, tr{
 
 table{
     border-collapse: collapse;
+    width: 960px;
 }
 
 th{
+    font-weight: 600;
     padding: 0 1.0em 0 0;
     border-bottom: 1px solid gray;
 }
 
 td{
+    font-size: 90%;
     padding: 0.2em 1.0em 0.2em 0;
     border-bottom: 1px dashed gray;
 }
@@ -69,31 +77,41 @@ header, section {
 }
 
 header {
-    display: table;
+    padding: 1.5em 1.0em 0.5em 1.0em;
+    background: #E5E5E5;
+    display: flex;
+    align-items: baseline;
 }
 
 header div {
-    display: table-cell;
-    vertical-align: bottom;
     padding-right: 2.0em;
+}
+
+footer {
+    padding: 1.0em 1.0em 2.0em 1.0em;
+    background: #E5E5E5;
 }
 
 /* - - - - - */
 
 .small {
-    font-size: 75%;
+    font-size: 80%;
 }
 
 .asciiart{
+    color: white;
     font-size: 60%;
-    line-height: 1.1em;
-    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    letter-spacing: 0.0em;
+
+    position:relative;
+    top: -1.5em;
 }
 
 /* - - - - - */
 
 #container{
     width: 960px;
-    padding: 2.0em;
+    padding: 0 2.0em;
     margin: 0 auto;
 }
