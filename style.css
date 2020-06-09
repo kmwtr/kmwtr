@@ -6,7 +6,7 @@ body{
     background: white;
     color: black;
     text-align: left;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', "M PLUS Rounded 1c", monospace;
     font-size: 15px;
     line-height: 1.5em;
 }
@@ -19,7 +19,7 @@ h2, h3{
 }
 
 p, li, th, td, a{
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -76,11 +76,9 @@ header, section {
     margin-bottom: 2.0em;
 }
 
-header section {
-    padding: 2.0em 1.0em 0.5em 1.0em;
+header {
+    padding: 3.0em 1.0em 0.0em 1.0em;
     background: #E5E5E5;
-    display: flex;
-    align-items: baseline;
 }
 
 header div {
@@ -91,6 +89,14 @@ footer {
     padding: 1.0em 1.0em 4.0em 1.0em;
     background: #E5E5E5;
 }
+
+.flex-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
 
 /* - - - - - */
 
@@ -114,4 +120,16 @@ footer {
     width: 960px;
     padding: 0 2.0em;
     margin: 0 auto;
+}
+
+.fr {
+    float: right;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: gray;
 }
