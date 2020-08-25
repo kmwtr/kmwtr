@@ -95,8 +95,8 @@ footer {
     align-items: baseline;
 }
 
-.flex-1 { flex: 1; }
-.flex-2 { flex: 2; }
+.flex-1 { flex: 2; }
+.flex-2 { flex: 3; }
 
 /* - - - - - */
 
@@ -106,12 +106,12 @@ footer {
 
 .asciiart{
     color: white;
-    font-size: 60%;
+    font-size: 80%;
     line-height: 1.2em;
-    letter-spacing: 0.0em;
+    letter-spacing: 0.2em;
 
     position:relative;
-    top: -1.5em;
+    top: -1.6em;
 }
 
 /* - - - - - */
