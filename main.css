@@ -92,6 +92,7 @@ a:visited {
 }
 a:hover {
     color: #26bfb8;
+    cursor: pointer;
 }
 
 
