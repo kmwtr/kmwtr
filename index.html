@@ -4,35 +4,54 @@
     <title>kmwtr.xyz</title>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
   <body>
-    <div id="container">
-      <header class="flex-container">
-        <div class="flex-1 flex-container">
-          <div class="flex-1 asciiart"><p>╆╁╅<br>┠╊┽<br>┾╇┽</p></div>
-          <div class="flex-2"><h1>上　航</h1></div>
-          <div class=""><p>Kami Wataru</p></div>
-        </div>
-        <div class="flex-2">
-          <p class="fr"><a href="https://log.kmwtr.xyz">Log</a> | <!--<a href="https://doc.kmwtr.xyz">Doc</a> | --><a href="https://docs.google.com/forms/d/1RHCAiLHy88fIDoVqeX24V4IjV8Dm3mkhFiRenf96oR4/viewform?usp=send_form">Contact</a></p>
-        </div>
+    <div id="RootContainer">
+      <header>
+        <section id="FlexContainer_Header">
+          <div class="ascii_art"><p>╆╁╅<br>┠╊┽<br>┾╇┽</p></div>
+          <div id="Name">
+            <h1>上　航</h1>
+            <p>Kami Wataru</p>
+          </div>
+        </section>
+        <p>(Anime|Game) Designer, and Maker</p>
       </header>
 
-      <section>
-        <p>(Anime|Game) Designer, and Maker</p>
-      </section>
-
-      <section>
+      <article id="RecentWork">
         <h2>間近の作品 | Recent Work</h2>
-        <p><iframe src="https://player.vimeo.com/video/404486903" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
-      </section>
+        <p><iframe src="https://player.vimeo.com/video/578983815?h=d0c3a9b20d&title=0&byline=0&portrait=0" width="960" height="1281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+        <p><iframe src="https://player.vimeo.com/video/404486903?h=51e493b37c&title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+      </article>
       
-      <section>
+      <article id="Links">
+        <h2>リンク | Links</h2>
+        <section class="flexContainer">
+          <ul>
+            <li><a href="https://log.kmwtr.xyz">Log (My daily image log site)</a></li>
+            <li><a href="https://docs.google.com/forms/d/1RHCAiLHy88fIDoVqeX24V4IjV8Dm3mkhFiRenf96oR4/viewform?usp=send_form">Contact form</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://eizo100.jp/archives/member/kamiwataru/">映像作家100人</a></li>
+            <li><a href="https://www.artstation.com/kmwtr">ArtStation</a></li>
+            <li><a href="https://vimeo.com/kmwtr">Vimeo</a></li>
+            <li><a href="https://github.com/kmwtr">GitHub</a></li>
+            <li><a href="https://twitter.com/wtrkm">Twitter</a></li>
+            <!--
+            <li><a href="http://chinchilla.systems">Chinchilla Systems</a></li>
+            <li><a href="http://store.chinchilla.systems">Chinchilla Systems Store</a></li>
+            -->
+          </ul>
+        </section>
+      </article>
+
+      <article id="Works">
         <h2>仕事・作品 | Works</h2>
         <table>
           <tr>
@@ -41,14 +60,12 @@
             <th>Genre</th>
             <th>Client</th>
             <th>Field</th>
-            <th>Other</th>
           </tr>
           <tr>
             <td>2020.08</td>
             <td><a href="https://kmwtr.github.io/Barecast">Barecast</a></td>
             <td>Font</td>
             <td>Personal work</td>
-            <td> - </td>
             <td> - </td>
           </tr>
           <tr>
@@ -57,14 +74,12 @@
             <td>Anime</td>
             <td>Personal work</td>
             <td> - </td>
-            <td><a href="https://vimeo.com/404486903">Vimeo</td>
           </tr>
           <tr>
             <td>2018.02</td>
             <td><a href="http://isaax-font.xshell.io">Isaax Sans</a></td>
             <td>Font</td>
             <td>Personal work</td>
-            <td> - </td>
             <td> - </td>
           </tr>
           <tr>
@@ -73,7 +88,6 @@
             <td>Anime</td>
             <td>Polygon Pictures</td>
             <td>Prop / Weapon Design</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2017.10</td>
@@ -81,14 +95,12 @@
             <td>PR</td>
             <td>JTEKT</td>
             <td>CG modeling</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2017.06</td>
             <td><a href="https://vimeo.com/219625128">Code of the Revolutionary: PV00</a></td>
             <td>Anime</td>
             <td>XSHELL</td>
-            <td> - </td>
             <td> - </td>
           </tr>
           <tr>
@@ -97,22 +109,19 @@
             <td>Anime</td>
             <td>Polygon Pictures</td>
             <td>Prop / Weapon Design</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2017.04</td>
-            <td><a href="http://isaax-font.xshell.io/">Isaax Logo</a></td>
+            <td><a href="https://twitter.com/wtrkm/status/857180332197425153">Isaax Logo</a></td>
             <td>Logotype</td>
             <td>XSHELL</td>
             <td> - </td>
-            <td><a href="https://twitter.com/wtrkm/status/857180332197425153">Tweet</a></td>
           </tr>
           <tr>
             <td>2017.02</td>
             <td><a href="http://isaax-font.xshell.io/">Isaax Font</a></td>
             <td>Font</td>
             <td>XSHELL</td>
-            <td> - </td>
             <td> - </td>
           </tr>
           <tr>
@@ -121,7 +130,6 @@
             <td>Product</td>
             <td>Personal work</td>
             <td> - </td>
-            <td><a href="https://vimeo.com/showcase/6953922">Vimeo</a></td>
           </tr>
           <tr>
             <td>2016.02</td>
@@ -129,7 +137,6 @@
             <td>Game</td>
             <td>CAPCOM</td>
             <td>Concept art</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2015.11</td>
@@ -137,7 +144,6 @@
             <td>Anime</td>
             <td>Polygon Pictures</td>
             <td>Concept art / Drawing</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2015.04</td>
@@ -145,7 +151,6 @@
             <td>Anime</td>
             <td>Polygon Pictures</td>
             <td>Concept art / Drawing</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2015.03</td>
@@ -153,7 +158,6 @@
             <td>Game</td>
             <td>FromSoftware</td>
             <td>Concept art (apprentice)</td>
-            <td> - </td>
           </tr>
           <tr>
             <td>2014.03</td>
@@ -161,14 +165,12 @@
             <td>Art</td>
             <td>Personal work</td>
             <td> - </td>
-            <td><a href="https://vimeo.com/89671763">Vimeo</a></td>
           </tr>
           <tr>
             <td>2012.11</td>
             <td><a href="http://beersansa.info/">Sansa Logo</a></td>
             <td>Logotype</td>
-            <td>Sansa</td>
-            <td> - </td>
+            <td>Beer bar Sansa</td>
             <td> - </td>
           </tr>
           <tr>
@@ -177,45 +179,30 @@
             <td>Painting</td>
             <td>Personal work</td>
             <td> - </td>
-            <td> - </td>
           </tr>
         </table>
-      </section>
+      </article>
 
-      <section>
+      <article>
         <h2>ツール | Tools</h2>
-        <ul>
-          <li>Art/Design</li>
+        <section class="flexContainer">
+          <h3>Art/<br>Design</h3>
           <ul>
-            <li>Photoshop, Illustrator, Glyphs, Resolve</li>
+            <li>Photoshop, Illustrator, Glyphs</li>
+            <li>After Effects, DaVinci Resolve</li>
             <li>Blender, ZBrush, Substance, UE4</li>
           </ul>
-          <li>Fab</li>
+          <h3>Fab</h3>
           <ul>
             <li>C++, C, C#, Python</li>
-            <li>KiCad, Fusion360, STM32, AVR</li>
+            <li>KiCad, Fusion360</li>
+            <li>STM32, AVR</li>
           </ul>
-        </ul>
-      </ul>
-      </section>
-
-      <section>
-        <h2>SNS</h2>
-        <ul>
-          <li><a href="https://eizo100.jp/archives/member/kamiwataru/">映像作家100人</a></li>
-          <li><a href="https://twitter.com/wtrkm">Twitter</a></li>
-          <li><a href="https://www.artstation.com/kmwtr">ArtStation</a></li>
-          <li><a href="https://vimeo.com/kmwtr">Vimeo</a></li>
-          <li><a href="https://github.com/kmwtr">GitHub</a></li>
-          <!--
-          <li><a href="http://chinchilla.systems">Chinchilla Systems</a></li>
-          <li><a href="http://store.chinchilla.systems">Chinchilla Systems Store</a></li>
-          -->
-        </ul>
-      </section>
+        </section>
+      </article>
 
       <footer>
-        <p class="small">&copy; 2017- 上 航, kmwtr</p>
+        <p class="small">&copy; 2017-today 上 航, kmwtr</p>
       </footer>
 
     </div>

@@ -1,0 +1,132 @@
+body{
+    /* Font */
+    font-family:    "Source Code Pro", "M PLUS Rounded 1c", monospace;
+    font-size:      15px;
+    line-height:    1.6em;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        /* Font */
+        font-size:  30px;
+    }
+}
+
+#RootContainer{
+    /* Centralize */
+    width:      960px;
+    margin:     0 auto;
+    /* Erase the right margin of smartphone */
+    overflow:   hidden;
+}
+
+/* - - - - - */
+
+header, footer{
+    background: #202020;
+    color:      #e0e0e0;
+    padding:    2.0em 1.0em;
+}
+
+article {
+    margin-bottom: 2.4em;
+}
+
+/* - - - - - */
+
+h1{
+    font-family:    "M PLUS Rounded 1c", sans-serif;
+    font-size:      140%;
+    font-weight:    300;
+}
+
+h2{
+    font-size:      120%;
+    font-weight:    600;
+    margin:         0.8em 0;
+    padding:        0.2em 1em;
+    border-bottom:  1px #404040 solid;
+}
+
+h3{
+    font-weight:    600;
+    padding:        0 1em;
+}
+
+ul{
+    list-style:     "* ";
+    padding:        0 1.6em;
+}
+
+table{
+    width: 100%;
+    border-collapse:    collapse;
+    white-space:        nowrap;
+}
+
+@media screen and (max-width: 480px) {
+    table{
+        display:            block;
+        overflow-x:         scroll;
+    }
+}
+
+th{
+    width: 100%;
+    font-weight:    600;
+    padding-left:   1.0em;
+    border-bottom:  1px solid #808080;
+}
+
+td{
+    padding-left:   1.0em;
+    border-bottom: 1px dashed #cccccc;
+}
+
+
+a:link {
+    color: #3078bf;
+}
+a:visited {
+    color: #4d6680;
+}
+a:hover {
+    color: #26bfb8;
+}
+
+
+/* Class */
+
+.flexContainer {
+    display:        flex;
+    align-items:    baseline;
+}
+
+.ascii_art{
+    line-height: 1.25em;
+    letter-spacing: 0.2em;
+    /*color: white;
+    font-size: 80%;*/
+    /*position:relative;*/
+}
+
+.small {
+    font-size: 80%;
+}
+
+
+/* ID */
+
+#FlexContainer_Header {
+    display:        flex;
+    align-items:    flex-end;
+    margin-bottom:  1em;
+}
+
+#Name{
+    margin: 0 1.2em;
+}
+
+#RecentWork p{
+    margin-bottom:  1em;
+}
