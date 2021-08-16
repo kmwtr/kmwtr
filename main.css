@@ -50,12 +50,18 @@ h2{
 
 h3{
     font-weight:    600;
-    padding:        0 1em;
+    padding:        0 1.0em;
 }
 
 ul{
     list-style:     "* ";
-    padding:        0 1.6em;
+    padding:        0 2.2em;
+}
+
+@media screen and (max-width: 480px) {
+    ul{
+        padding:        0 1.0em 0 2.2em;
+    }
 }
 
 table{
@@ -66,13 +72,13 @@ table{
 
 @media screen and (max-width: 480px) {
     table{
-        display:            block;
-        overflow-x:         scroll;
+        display:        block;
+        overflow-x:     scroll;
     }
 }
 
 th{
-    width: 100%;
+    width:          100%;
     font-weight:    600;
     padding-left:   1.0em;
     border-bottom:  1px solid #808080;
@@ -80,7 +86,7 @@ th{
 
 td{
     padding-left:   1.0em;
-    border-bottom: 1px dashed #cccccc;
+    border-bottom:  1px dashed #cccccc;
 }
 
 
@@ -104,7 +110,7 @@ a:hover {
 }
 
 .ascii_art{
-    line-height: 1.25em;
+    line-height:    1.25em;
     letter-spacing: 0.2em;
     /*color: white;
     font-size: 80%;*/
