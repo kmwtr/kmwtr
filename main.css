@@ -9,6 +9,8 @@ body{
     body{
         /* Font */
         font-size:  30px;
+        /* Default size*/
+        zoom: 50%;
     }
 }
 
