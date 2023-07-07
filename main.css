@@ -42,7 +42,7 @@ h2{
     font-weight:    600;
     margin:         0.8em 0;
     padding:        0.2em 1em;
-    border-bottom:  1px #404040 solid;
+    border-bottom:  1px black solid;
 }
 
 h3{
@@ -78,7 +78,7 @@ th{
     width:          100%;
     font-weight:    600;
     padding-left:   1.0em;
-    border-bottom:  1px solid #808080;
+    border-bottom:  1px dashed black;
 }
 
 td{
