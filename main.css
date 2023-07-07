@@ -4,10 +4,15 @@ body{
     line-height:    1.5em;
 }
 
-#RootContainer{
+#RootContainer0{
+    width:      1024px;
+    margin:     0 auto;
+}
+
+#RootContainer1{
     width:      1000px;
-    margin:     2.0em auto;
-    padding:    1.0em 12px;
+    margin:     24px 12px;
+    padding:    1.0em;
     border:     1px black solid;
     border-radius: 6px;
 }
