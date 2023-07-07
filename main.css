@@ -1,37 +1,32 @@
 body{
-    /* Font */
     font-family:    "Source Code Pro", "M PLUS Rounded 1c", monospace;
     font-size:      15px;
-    line-height:    1.6em;
-}
-
-@media screen and (max-width: 480px) {
-    body{
-        /* Font */
-        font-size:  30px;
-        /* Default size*/
-        zoom: 50%;
-    }
+    line-height:    1.5em;
 }
 
 #RootContainer{
-    /* Centralize */
-    width:      960px;
-    margin:     0 auto;
-    /* Erase the right margin of smartphone */
-    overflow:   hidden;
+    overflow:   hidden; /* Erase the right margin of smartphone */
+    width:      1000px;
+    margin:     2.0em auto;
+    padding:    1.0em 12px;
+    border:     1px black solid;
+    border-radius: 6px;
 }
 
 /* - - - - - */
 
-header, footer{
-    background: #202020;
-    color:      #e0e0e0;
-    padding:    2.0em 1.0em;
+header{
+    padding:    1.0em;
+    margin-bottom: 1.0em;
+}
+
+footer{
+    padding:    1.0em;
+    margin-top: 1.0em;
 }
 
 article {
-    margin-bottom: 2.4em;
+    margin-bottom: 2.0em;
 }
 
 /* - - - - - */
