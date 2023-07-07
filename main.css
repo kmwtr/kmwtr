@@ -5,7 +5,6 @@ body{
 }
 
 #RootContainer{
-    overflow:   hidden; /* Erase the right margin of smartphone */
     width:      1000px;
     margin:     2.0em auto;
     padding:    1.0em 12px;
