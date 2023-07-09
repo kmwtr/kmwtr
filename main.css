@@ -51,12 +51,7 @@ h2{
 ul{
     list-style:     "* ";
     padding:        0 2.2em;
-}
-
-@media screen and (max-width: 480px) {
-    ul{
-        padding:    0 1.0em 0 2.2em;
-    }
+    margin: 0;
 }
 
 table{
@@ -65,13 +60,6 @@ table{
     width:          100%;
     border-collapse:    collapse;
     white-space:        nowrap;
-}
-
-@media screen and (max-width: 480px) {
-    table{
-        display:    block;
-        overflow-x: scroll;
-    }
 }
 
 th{
@@ -130,8 +118,4 @@ a:hover {
 
 #Name{
     margin: 0 1.2em;
-}
-
-#RecentWork p{
-    margin-bottom:  1em;
 }
