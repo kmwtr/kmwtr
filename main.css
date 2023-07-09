@@ -5,54 +5,48 @@ body{
 }
 
 #RootContainer0{
-    width:      1024px;
-    margin:     0 auto;
+    width:          1024px;
+    margin:         0 auto;
 }
 
 #RootContainer1{
-    width:      1000px;
-    margin:     24px 12px;
-    padding:    1.0em;
-    border:     1px black solid;
-    border-radius: 6px;
+    width:          1000px;
+    margin:         24px 12px;
+    border:         1px black solid;
+    border-radius:  6px;
 }
-
-/* - - - - - */
 
 header{
-    padding:    1.0em;
-    margin-bottom: 1.0em;
-}
-
-footer{
-    padding:    1.0em;
-    margin-top: 1.0em;
+    padding:        2.0em;
+    border-bottom:  1px black solid;
+    margin-bottom:  2.0em;
 }
 
 article {
-    margin-bottom: 2.0em;
+    padding:        0 2.0em;
+    margin-bottom:  2.0em;
 }
 
-/* - - - - - */
+footer{
+    padding:        2.0em;
+    border-top:     1px black solid;
+}
 
 h1{
     font-family:    "M PLUS Rounded 1c", sans-serif;
-    font-size:      140%;
+    font-size:      150%;
     font-weight:    300;
 }
 
 h2{
-    font-size:      120%;
+    font-size:      125%;
     font-weight:    600;
     margin:         0.8em 0;
     padding:        0.2em 1em;
     border-bottom:  1px black solid;
 }
 
-h3{
-    font-weight:    600;
-    padding:        0.4em 1.0em;
-}
+/* <- - - - - */
 
 ul{
     list-style:     "* ";
@@ -61,31 +55,32 @@ ul{
 
 @media screen and (max-width: 480px) {
     ul{
-        padding:        0 1.0em 0 2.2em;
+        padding:    0 1.0em 0 2.2em;
     }
 }
 
 table{
-    width: 100%;
+    font-size:      15px;
+    table-layout:   auto;
+    width:          100%;
     border-collapse:    collapse;
     white-space:        nowrap;
 }
 
 @media screen and (max-width: 480px) {
     table{
-        display:        block;
-        overflow-x:     scroll;
+        display:    block;
+        overflow-x: scroll;
     }
 }
 
 th{
-    width:          100%;
     font-weight:    600;
-    padding-left:   1.0em;
     border-bottom:  1px dashed black;
 }
 
 td{
+    font-size:      14px;
     padding-left:   1.0em;
     border-bottom:  1px dashed #cccccc;
 }
@@ -106,8 +101,10 @@ a:hover {
 /* Class */
 
 .flexContainer {
-    display:        flex;
-    align-items:    baseline;
+    display:                grid;
+    grid-template-columns:  50% 25% 25%;
+    column-gap:             0;
+    row-gap:                0;
 }
 
 .ascii_art{
