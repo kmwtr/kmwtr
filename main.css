@@ -1,5 +1,5 @@
 body{
-    font-family:    "Source Code Pro", "M PLUS Rounded 1c", monospace;
+    font-family:    "Source Code Pro", "Zen Maru Gothic", monospace;
     font-size:      15px;
     line-height:    1.5em;
 }
@@ -33,14 +33,14 @@ footer{
 }
 
 h1{
-    font-family:    "M PLUS Rounded 1c", sans-serif;
+    font-family:    "Zen Maru Gothic", sans-serif;
     font-size:      150%;
     font-weight:    300;
 }
 
 h2{
     font-size:      125%;
-    font-weight:    600;
+    font-weight:    300;
     margin:         0.8em 0;
     padding:        0.2em 1em;
     border-bottom:  1px black solid;
@@ -63,7 +63,7 @@ table{
 }
 
 th{
-    font-weight:    600;
+    font-weight:    500;
     border-bottom:  1px dashed black;
 }
 
@@ -96,6 +96,7 @@ a:hover {
 }
 
 .ascii_art{
+    font-family: "Zen Maru Gothic";
     line-height:    1.25em;
     letter-spacing: 0.2em;
     /*color: white;
