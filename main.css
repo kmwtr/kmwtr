@@ -1,122 +1,219 @@
 body{
     font-family:    "Source Code Pro", "Zen Maru Gothic", monospace;
-    font-size:      15px;
+    font-size:      16px;
+    font-weight:    300;
     line-height:    1.5em;
 }
 
-#RootContainer0{
-    width:          1024px;
+body::-webkit-scrollbar {
+    display:        none;
+}
+
+/* ----------------------------------------------- */
+
+article{
+    width:          1280px;
     margin:         0 auto;
 }
 
-#RootContainer1{
-    width:          1000px;
-    margin:         24px 12px;
-    border:         1px black solid;
-    border-radius:  6px;
-}
-
 header{
-    padding:        2.0em;
+    padding-top:    2.0em;
+    padding-bottom: 1.0em;
     border-bottom:  1px black solid;
     margin-bottom:  2.0em;
-}
-
-article {
-    padding:        0 2.0em;
-    margin-bottom:  2.0em;
+    display:                grid;
+    grid-template-columns:  50% 50%;
 }
 
 footer{
-    padding:        2.0em;
+    margin-top:     2.0em;
     border-top:     1px black solid;
+    padding-top:    1.0em;
+    padding-bottom: 2.0em;
+}
+
+h1, h2, h3, p, ul, li, a{
+    font-weight:    300;
 }
 
 h1{
-    font-family:    "Zen Maru Gothic", sans-serif;
-    font-size:      150%;
-    font-weight:    300;
+    font-size:      1.0em;
 }
 
-h2{
-    font-size:      125%;
-    font-weight:    300;
-    margin:         0.8em 0;
-    padding:        0.2em 1em;
-    border-bottom:  1px black solid;
+h2 {
+    margin:      1.0em 0;
 }
 
-/* <- - - - - */
-
-ul{
-    list-style:     "* ";
-    padding:        0 2.2em;
-    margin: 0;
+h2, h3{
+    font-size:      1.5em;
 }
 
+p, ul, table{
+    margin-top: 1em;
+}
+
+ul {
+    padding-inline-start: 1.5em;
+    list-style:         "* ";
+}
+
+/* ----------------------------------------------- */
 table{
-    font-size:      15px;
-    table-layout:   auto;
-    width:          100%;
+    table-layout:       auto;
+    width:              100%;
     border-collapse:    collapse;
     white-space:        nowrap;
 }
 
+tr {
+    background-color:   #f0f0f0;
+}
+
 th{
-    font-weight:    500;
-    border-bottom:  1px dashed black;
+    font-weight:        500;
+    background-color:   #ffffff;
+    border-bottom:      1px dashed black;
 }
 
 td{
-    font-size:      14px;
-    padding-left:   1.0em;
-    border-bottom:  1px dashed #cccccc;
+    padding-left:       0.5em;
+    border-bottom:      1px dashed #cccccc;
+}
+/* ----------------------------------------------- */
+
+img, video{
+    width:              100%;
+    aspect-ratio:       4 / 3;
+    object-fit:         cover;
+    object-position:    center center;
+    background-image:   url(../asset/transparent_tile.png);
+    vertical-align:     bottom;
 }
 
+/* ----------------------------------------------- */
 
 a:link {
-    color: #3078bf;
+    color:              #197fb3;
 }
+
 a:visited {
-    color: #4d6680;
+    color:              #134c86;
 }
+
 a:hover {
-    color: #26bfb8;
-    cursor: pointer;
+    color:              #20bfdf;
+    cursor:             pointer;
 }
 
+/* ----------------------------------------------- */
 
-/* Class */
 
-.flexContainer {
-    display:                grid;
-    grid-template-columns:  50% 25% 25%;
-    column-gap:             0;
-    row-gap:                0;
+.bold {
+    font-weight:        500;
+}
+
+.Personal_work{
+    background-color:   #ffffff;
 }
 
 .ascii_art{
-    font-family: "Zen Maru Gothic";
-    line-height:    1.25em;
-    letter-spacing: 0.2em;
-    /*color: white;
-    font-size: 80%;*/
-    /*position:relative;*/
+    font-family:        "Zen Maru Gothic";
+    font-size:          8px;
+    line-height:        1.0em;
+    letter-spacing:     0.0em;
 }
 
-.small {
-    font-size: 75%;
+#logo p{
+    display:            grid;
+    place-content:      end right;
+    margin: 0;
+    margin-bottom:      -2.0em;
+    padding-right:        0.25em;
 }
 
 
-/* ID */
+/* PC ------------------------------ */
 
-#FlexContainer_Header {
-    display:        flex;
-    align-items:    flex-end;
-    margin-bottom:  1em;
+@media screen and (min-width:769px){
+    .grid{
+        display:                grid;
+        grid-template-columns:  25% 75%;
+        column-gap:             0px;
+        row-gap:                0px;
+    }
 }
 
-#Name{
-    margin: 0 1.2em;
+/* ----------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    article{
+        width:          auto;
+    }
+    
+    header{
+        padding-top:    1.5em;
+        padding-bottom: 1.5em;
+        border-bottom:  1px black solid;
+        margin-bottom:  1.5em;
+    }
+    
+    footer{
+        margin-top:     1.5em;
+        border-top:     1px black solid;
+        padding-top:    1.5em;
+        padding-bottom: 1.5em;
+    }
+    
+    h1, h2, h3 {
+        font-size:      1.5em;
+        padding-left:   0.5em;
+        padding-left:   0.5em;
+    }
+    h2 {
+        margin:         1.5em 0 1.0em;
+    }
+
+    /* ----------------------------------------------- */
+    p{
+        padding-left:           1.0em;
+    }
+    ul {
+        padding-inline-start:   2.5em;
+        line-height:            2.0em;
+    }
+
+    #logo p{
+        padding-right:        1em;
+    }
+
+    .responsive {
+        border-collapse:    separate;
+        border-spacing:     1em;
+        background-color:   #f0f0f0;
+        padding:            0.5em 0;
+    }
+    .responsive thead {
+        display: none;
+    }
+    .responsive tr {
+        background-color: #e0e0e0;
+    }
+    .responsive .Personal_work{
+        background-color:   #ffffff;
+    }
+    .responsive td {
+        border:         none;
+        display:        block;
+        width:          100%;
+        box-sizing:     border-box;
+        border-bottom:  1px dashed #cccccc;
+    }
+    .responsive td:before {
+        content:        attr(data-title) ": \A     ";
+        font-size:      0.75em;
+        white-space:    pre;
+    }
+    .responsive .no_border {
+        border:         none;
+    }
 }
