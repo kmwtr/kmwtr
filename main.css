@@ -176,12 +176,13 @@ a:hover {
         display:                block;
         padding-left:           4.0em;
         border-left:            2px #d0d0d0 solid;
+        font-size:              0.9em;
     }
 
     .responsive td:before {
         font-weight:            500;
         content:                attr(data-title) ":";
-        font-size:              0.75em;
+        font-size:              0.7em;
         position:               absolute;
         left:                   0.5em;
     }
