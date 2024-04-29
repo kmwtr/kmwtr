@@ -75,6 +75,7 @@ table {
     width:              100%;
     border-collapse:    collapse;
     white-space:        nowrap;
+    overflow:           hidden;
 }
 
 th {
