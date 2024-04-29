@@ -1,96 +1,101 @@
-body{
-    font-family:    "Source Code Pro", "Zen Maru Gothic", monospace;
-    font-size:      16px;
-    font-weight:    300;
-    line-height:    1.5em;
+* {
+    font-family:        "Source Code Pro", "Zen Maru Gothic", monospace;
+    font-weight:        300;
+    font-size:          16px;
+    box-sizing:         border-box;
+    margin:             0;
+    padding:            0;
+}
+
+/* ----------------------------------------------------- */
+
+body {
+    line-height:        1.5em;
 }
 
 body::-webkit-scrollbar {
-    display:        none;
+    display:            none;
 }
 
-/* ----------------------------------------------- */
-
-article{
-    width:          1280px;
-    margin:         0 auto;
+article {
+    width:              1280px;
+    margin:             0 auto;
 }
 
-header{
-    padding-top:    2.0em;
-    padding-bottom: 1.0em;
-    border-bottom:  1px black solid;
-    margin-bottom:  2.0em;
+header {
+    padding-top:            2.0em;
+    padding-bottom:         1.0em;
+    border-bottom:          1px black solid;
+    margin-bottom:          3.0em;
+    /* this site-specific */
     display:                grid;
     grid-template-columns:  50% 50%;
 }
 
-footer{
-    margin-top:     2.0em;
-    border-top:     1px black solid;
-    padding-top:    1.0em;
-    padding-bottom: 2.0em;
+.bold {
+    font-weight:        500;
 }
 
-h1, h2, h3, p, ul, li, a{
-    font-weight:    300;
+#logo {
+    justify-self:       end;
+    padding-right:      0.25em;
+    margin-bottom:      -2.0em;
 }
 
-h1{
-    font-size:      1.0em;
+.segment {
+    margin-bottom:      2.0em;
+}
+
+footer {
+    margin-top:         3.0em;
+    border-top:         1px black solid;
+    padding-top:        1.0em;
+    padding-bottom:     2.0em;
+}
+
+/* ----------------------------------------------------- */
+
+h1 {
+    font-size:          1.0em;
 }
 
 h2 {
-    margin:      1.0em 0;
-}
-
-h2, h3{
-    font-size:      1.5em;
-}
-
-p, ul, table{
-    margin-top: 1em;
+    font-size:          1.5em;
+    margin-bottom:      1.0em;
+    background-color:   #f0f0f0;
 }
 
 ul {
-    padding-inline-start: 1.5em;
-    list-style:         "* ";
+    padding-inline-start:   1.5em;
+    list-style:             "* ";
 }
 
-/* ----------------------------------------------- */
-table{
+table {
     table-layout:       auto;
     width:              100%;
     border-collapse:    collapse;
     white-space:        nowrap;
 }
 
-tr {
-    background-color:   #f0f0f0;
-}
-
-th{
-    font-weight:        500;
+th {
     background-color:   #ffffff;
-    border-bottom:      1px dashed black;
-}
-
-td{
+    border-bottom:      1px dashed #000000;
+    text-align:         left;
     padding-left:       0.5em;
+    font-weight:        500;
+}
+
+td {
+    background-color:   #f0f0f0;
     border-bottom:      1px dashed #cccccc;
-}
-/* ----------------------------------------------- */
-
-img, video{
-    width:              100%;
-    aspect-ratio:       4 / 3;
-    object-fit:         cover;
-    object-position:    center center;
-    background-image:   url(../asset/transparent_tile.png);
-    vertical-align:     bottom;
+    padding-left:       0.5em;
 }
 
-/* ----------------------------------------------- */
+.personal_work td {
+    background-color:   #ffffff;
+}
+
+/* ----------------------------------------------------- */
 
 a:link {
     color:              #197fb3;
@@ -105,58 +110,36 @@ a:hover {
     cursor:             pointer;
 }
 
-/* ----------------------------------------------- */
+/* PC -------------------------------------------------- */
 
-
-.bold {
-    font-weight:        500;
-}
-
-.Personal_work{
-    background-color:   #ffffff;
-}
-
-.ascii_art{
-    font-family:        "Zen Maru Gothic";
-    font-size:          8px;
-    line-height:        1.0em;
-    letter-spacing:     0.0em;
-}
-
-#logo p{
-    display:            grid;
-    place-content:      end right;
-    margin: 0;
-    margin-bottom:      -2.0em;
-    padding-right:        0.25em;
-}
-
-
-/* PC ------------------------------ */
-
-@media screen and (min-width:769px){
-    .grid{
+@media screen and (min-width:769px) {
+    #grid {
         display:                grid;
-        grid-template-columns:  25% 75%;
-        column-gap:             0px;
-        row-gap:                0px;
+        grid-template-columns:  25% 72.5%;
+        column-gap:             2.5%;
+        row-gap:                0;
     }
 }
 
-/* ----------------------------------------------- */
+/* Mobile ---------------------------------------------- */
 
 @media screen and (max-width: 768px) {
-    article{
+    article {
         width:          auto;
     }
     
-    header{
+    header {
         padding-top:    1.5em;
         padding-bottom: 1.5em;
         border-bottom:  1px black solid;
         margin-bottom:  1.5em;
     }
-    
+
+    #logo {
+        padding-right:  1.0em;
+        margin-bottom:  -2.0em;
+    }
+
     footer{
         margin-top:     1.5em;
         border-top:     1px black solid;
@@ -164,55 +147,41 @@ a:hover {
         padding-bottom: 1.5em;
     }
     
-    h1, h2, h3 {
+    h1, h2 {
         font-size:      1.25em;
         padding-left:   1.0em;
     }
-    h2 {
-        margin:         1.5em 0 1.0em;
+
+    p {
+        padding-left:   1.0em;
     }
-    p{
-        padding-left:           1.0em;
-    }
+
     ul {
         padding-inline-start:   2.5em;
         line-height:            2.0em;
     }
 
-    #logo p{
-        padding-right:        1em;
+    .responsive {
+        border-collapse:        separate;
+        border-spacing:         1em;
     }
 
-    .responsive {
-        border-collapse:    separate;
-        border-spacing:     1em;
-        background-color:   #f0f0f0;
-        padding:            0.5em 0;
-    }
     .responsive thead {
-        display: none;
+        display:                none;
     }
-    .responsive tr {
-        background-color: #e0e0e0;
-    }
-    .responsive .Personal_work{
-        background-color:   #ffffff;
-    }
+    
     .responsive td {
-        border:         none;
-        display:        block;
-        width:          100%;
-        box-sizing:     border-box;
-        border-bottom:  1px dashed #cccccc;
-        line-height:    1.0em;
-        padding-bottom: 0.25em;
+        position:               relative;
+        display:                block;
+        padding-left:           4.0em;
+        border-left:            2px #d0d0d0 solid;
     }
+
     .responsive td:before {
-        content:        attr(data-title) ": \A     ";
-        font-size:      0.75em;
-        white-space:    pre;
-    }
-    .responsive .no_border {
-        border:         none;
+        font-weight:            500;
+        content:                attr(data-title) ":";
+        font-size:              0.75em;
+        position:               absolute;
+        left:                   0.5em;
     }
 }
