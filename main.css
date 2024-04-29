@@ -29,7 +29,7 @@ header {
     margin-bottom:          3.0em;
     /* this site-specific */
     display:                grid;
-    grid-template-columns:  50% 50%;
+    grid-template-columns:  75% 25%;
 }
 
 .bold {
