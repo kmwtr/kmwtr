@@ -27,7 +27,6 @@ header {
     padding-bottom:         1.0em;
     border-bottom:          1px black solid;
     margin-bottom:          3.0em;
-    /* this site-specific */
     display:                grid;
     grid-template-columns:  75% 25%;
 }
@@ -189,6 +188,6 @@ a:hover {
     }
 
     #logo {
-        margin-top:             -0.1em;
+        margin-top:             -0.2em;
     }
 }
