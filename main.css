@@ -92,6 +92,10 @@ td {
     padding-left:       0.5em;
 }
 
+.small {
+    font-size:          0.75em;
+}
+
 .personal_work td {
     background-color:   #ffffff;
 }
